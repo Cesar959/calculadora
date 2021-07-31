@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <!-- Estilo personalizado -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+        <!-- goggle fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+
+    <!-- javascript personalizado -->
+    <script src="main.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png">
+</head>
+<body>
+
+    <div class="container">
+        <div class="calculadora">
+            <div class="cabecalho">calc</div>
+            <input type="text" class="visao-resultado" id="resultado"  placeholder="0" disabled>
+            <div class="teclado">
+                <button class="botao-teclado" onclick="calcular('valor', 7)">7</button>
+                <button class="botao-teclado"  onclick="calcular('valor', 8)">8</button>
+                <button class="botao-teclado"  onclick="calcular('valor', 9)">9</button>
+                <button class="botao-teclado-delete"  onclick="calcular('acao', 'del')">DEL</button>
+                <button class="botao-teclado"  onclick="calcular('valor', 4)">4</button>
+                <button class="botao-teclado"  onclick="calcular('valor', 5)">5</button>
+                <button class="botao-teclado"  onclick="calcular('valor', 6)">6</button>
+                <button class="botao-teclado"  onclick="calcular('acao', '+')">+</button>
+                <button class="botao-teclado"  onclick="calcular('valor', 1)">1</button>
+                <button class="botao-teclado"  onclick="calcular('valor', 2)">2</button>
+                <button class="botao-teclado"  onclick="calcular('valor', 3)">3</button>
+                <button class="botao-teclado"  onclick="calcular('acao', '-')">-</button>
+                <button class="botao-teclado"  onclick="calcular('valor', '.')">.</button>
+                <button class="botao-teclado"  onclick="calcular('valor', 0)">0</button>
+                <button class="botao-teclado"  onclick="calcular('acao', '/')">/</button>
+                <button class="botao-teclado"  onclick="calcular('acao', '*')">X</button>
+
+                <button class="botao-teclado-reset" onclick="calcular('acao', 'reset')">RESET</button>
+                <button class="botao-teclado-igual" onclick="calcular('acao', '=')">=</button>
+            </div>
+            
+        </div>
+    </div>
+
+    
+</body>
+</html>
